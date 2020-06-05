@@ -1,0 +1,8 @@
+prefix=/home/dariusm/catkin_ws/install
+
+Name: ar_pose
+Description: Description of ar_pose
+Version: 0.0.0
+Cflags: -I/home/dariusm/catkin_ws/install/include
+Libs: -L/home/dariusm/catkin_ws/install/lib 
+Requires: roscpp geometry_msgs visualization_msgs artoolkit message_runtime

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+    <node name="ard_autopilot" pkg="ard_autopilot" type="landing_autopilot" output="screen">
+	<param name="target_X" value="0.1" />
+	<param name="target_Y" value="0.1" />
+	<param name="target_Z" value="0.5" />
+	<param name="target_yaw" value="5.0" />
+    </node>
+</launch>

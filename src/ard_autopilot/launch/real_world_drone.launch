@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+	<!-- Real ARDrone network driver -->
+	<include file="$(find uga_tum_ardrone)/launch/ardrone_driver.launch"/>
+
+	<!-- Control GUI -->
+	<include file="$(find uga_tum_ardrone)/launch/gazebo_control.launch"/>
+
+	<!-- Marker detection -->
+	<include file="$(find ar_pose)/launch/real_drone_ar_pose_transformation.launch"/>
+	
+	<!-- Dynamic parameter reconfigure GUI -->
+	<node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_reconfigure"/>
+
+</launch>
+
